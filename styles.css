@@ -1,0 +1,125 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: url(images/fondo-pantalla.png) center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: url(images/fondo-papel.jpg);
+  min-height: 38rem;
+  width: 35rem;
+  margin: 2rem 1rem 1rem 1rem;
+  box-shadow: 0 0 1rem black, inset 0 0 1rem white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+#titulo {
+  font-size: 4rem;
+  margin: 2rem 2rem 0.5rem 2rem;
+  user-select: none;
+}
+
+#input {
+  width: 70%;
+  padding: 0.2rem;
+  margin: 0.5rem;
+}
+
+#boton {
+  background-color: slateblue;
+  color: white;
+  padding: 0.8rem;
+  width: 10rem;
+  border-radius: 1rem;
+  margin: 0.2rem 1rem 1rem 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+#lista {
+  margin: 0 1.7rem;
+  width: 80%;
+}
+#lista .elemento {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0.8rem 0.5rem;
+  text-align: start;
+  background-color: #2586d497;
+  border-radius: 1rem;
+  margin: 0.7rem;
+}
+
+.tarea {
+  max-width: 80%;
+  word-wrap: break-word; /*permite que las palabras se rompan en medio y se ajusten al ancho del contenedor. */
+}
+
+#lista .tarea-completada {
+  background-color: #183f5f97;
+  text-decoration: line-through;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icono-check {
+  height: 1.3rem;
+  width: 1.3rem;
+  margin: 0 1.2rem;
+}
+
+i {
+  padding-right: 0.3rem;
+}
+
+.footer {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  user-select: none;
+}
+
+@media screen and (max-width: 600px) {
+  #titulo {
+    font-size: 2.5rem;
+  }
+  #input {
+    width: 85%;
+  }
+  #boton {
+    padding: 0.5rem;
+  }
+  #lista .elemento {
+    font-size: 0.9rem;
+    width: 100%;
+    margin: 0.7rem 0;
+  }
+  .container {
+    width: 90%;
+  }
+  .icono-check {
+    margin: 0 1.2rem;
+  }
+  .tarea {
+    width: 70%;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+}
